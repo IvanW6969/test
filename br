@@ -1,0 +1,756 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local V2 = Instance.new("ScreenGui")
+local Ui = Instance.new("Frame")
+local Title = Instance.new("TextLabel")
+local UICorner = Instance.new("UICorner")
+local UnderLine = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local ButtonTabs = Instance.new("Frame")
+local Listlayout = Instance.new("UIListLayout")
+local UICorner_3 = Instance.new("UICorner")
+local Welcome = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Player = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Misc = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local Tabs = Instance.new("Frame")
+local PlayerTab = Instance.new("Frame")
+local UIGridLayout = Instance.new("UIGridLayout")
+local Toggle = Instance.new("TextButton")
+local Background = Instance.new("TextLabel")
+local UICorner_7 = Instance.new("UICorner")
+local ToggleBall = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local UICorner_9 = Instance.new("UICorner")
+local InfJ = Instance.new("TextButton")
+local Background_2 = Instance.new("TextLabel")
+local UICorner_10 = Instance.new("UICorner")
+local ToggleBall_2 = Instance.new("Frame")
+local UICorner_11 = Instance.new("UICorner")
+local Noclipx = Instance.new("TextButton")
+local Background_3 = Instance.new("TextLabel")
+local UICorner_12 = Instance.new("UICorner")
+local ToggleBall_3 = Instance.new("Frame")
+local UICorner_13 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
+local MiscTab = Instance.new("Frame")
+local UIGridLayout_2 = Instance.new("UIGridLayout")
+local UICorner_15 = Instance.new("UICorner")
+local ChestESP = Instance.new("TextButton")
+local Background_4 = Instance.new("TextLabel")
+local UICorner_16 = Instance.new("UICorner")
+local ToggleBall_4 = Instance.new("Frame")
+local UICorner_17 = Instance.new("UICorner")
+local PlayerESP = Instance.new("TextButton")
+local Background_5 = Instance.new("TextLabel")
+local UICorner_18 = Instance.new("UICorner")
+local ToggleBall_5 = Instance.new("Frame")
+local UICorner_19 = Instance.new("UICorner")
+local WelcomeTab = Instance.new("Frame")
+local UICorner_20 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_21 = Instance.new("UICorner")
+local random = Instance.new("Frame")
+local UICorner_22 = Instance.new("UICorner")
+
+--Properties:
+
+V2.Name = "V2"
+V2.Parent = game.CoreGui
+V2.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Ui.Name = "Ui"
+Ui.Parent = V2
+Ui.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Ui.BorderSizePixel = 0
+Ui.Position = UDim2.new(0.0878809392, 0, 0.194278911, 0)
+Ui.Size = UDim2.new(0, 643, 0, 334)
+
+Title.Name = "Title"
+Title.Parent = Ui
+Title.BackgroundColor3 = Color3.fromRGB(45, 45, 45)
+Title.BorderSizePixel = 0
+Title.Size = UDim2.new(0, 643, 0, 52)
+Title.Font = Enum.Font.SourceSansBold
+Title.Text = "Astra Hub"
+Title.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title.TextScaled = true
+Title.TextSize = 14.000
+Title.TextWrapped = true
+
+UICorner.Parent = Title
+
+UnderLine.Name = "UnderLine"
+UnderLine.Parent = Ui
+UnderLine.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UnderLine.BorderSizePixel = 0
+UnderLine.Position = UDim2.new(0, 0, 0.155688629, 0)
+UnderLine.Size = UDim2.new(0, 643, 0, 2)
+
+UICorner_2.Parent = UnderLine
+
+ButtonTabs.Name = "ButtonTabs"
+ButtonTabs.Parent = Ui
+ButtonTabs.BackgroundColor3 = Color3.fromRGB(36, 36, 36)
+ButtonTabs.BorderSizePixel = 0
+ButtonTabs.Position = UDim2.new(0, 0, 0.161676645, 0)
+ButtonTabs.Size = UDim2.new(0, 137, 0, 280)
+
+Listlayout.Name = "Listlayout"
+Listlayout.Parent = ButtonTabs
+Listlayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+Listlayout.SortOrder = Enum.SortOrder.LayoutOrder
+Listlayout.Padding = UDim.new(0, 4)
+
+UICorner_3.Parent = ButtonTabs
+
+Welcome.Name = "Welcome"
+Welcome.Parent = ButtonTabs
+Welcome.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Welcome.Position = UDim2.new(0.0364963487, 0, -0.0892857164, 0)
+Welcome.Size = UDim2.new(0, 126, 0, 28)
+Welcome.Font = Enum.Font.SciFi
+Welcome.Text = "Welcome"
+Welcome.TextColor3 = Color3.fromRGB(255, 255, 255)
+Welcome.TextScaled = true
+Welcome.TextSize = 14.000
+Welcome.TextWrapped = true
+
+UICorner_4.Parent = Welcome
+
+Player.Name = "Player"
+Player.Parent = ButtonTabs
+Player.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Player.Position = UDim2.new(0.0364963487, 0, -0.0892857164, 0)
+Player.Size = UDim2.new(0, 126, 0, 28)
+Player.Font = Enum.Font.SciFi
+Player.Text = "Player"
+Player.TextColor3 = Color3.fromRGB(255, 255, 255)
+Player.TextScaled = true
+Player.TextSize = 14.000
+Player.TextWrapped = true
+
+UICorner_5.Parent = Player
+
+Misc.Name = "Misc"
+Misc.Parent = ButtonTabs
+Misc.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Misc.Position = UDim2.new(-0.00729927048, 0, 0.314285725, 0)
+Misc.Size = UDim2.new(0, 126, 0, 28)
+Misc.Font = Enum.Font.SciFi
+Misc.Text = "Misc"
+Misc.TextColor3 = Color3.fromRGB(255, 255, 255)
+Misc.TextScaled = true
+Misc.TextSize = 14.000
+Misc.TextWrapped = true
+
+UICorner_6.Parent = Misc
+
+Tabs.Name = "Tabs"
+Tabs.Parent = Ui
+Tabs.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+Tabs.BorderSizePixel = 0
+Tabs.Position = UDim2.new(0.2126441, 0, 0.159751922, 0)
+Tabs.Size = UDim2.new(0, 506, 0, 280)
+
+PlayerTab.Name = "PlayerTab"
+PlayerTab.Parent = Tabs
+PlayerTab.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+PlayerTab.BorderSizePixel = 0
+PlayerTab.Position = UDim2.new(-0.000794634223, 0, -0.000962361693, 0)
+PlayerTab.Size = UDim2.new(0, 506, 0, 280)
+PlayerTab.Visible = false
+
+UIGridLayout.Parent = PlayerTab
+UIGridLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout.CellSize = UDim2.new(1, 0, 0, 30)
+
+Toggle.Name = "Toggle"
+Toggle.Parent = PlayerTab
+Toggle.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Toggle.BorderSizePixel = 0
+Toggle.Size = UDim2.new(0, 200, 0, 50)
+Toggle.Font = Enum.Font.SourceSansItalic
+Toggle.Text = "Shift To Use WalkSpeed!"
+Toggle.TextColor3 = Color3.fromRGB(255, 255, 255)
+Toggle.TextScaled = true
+Toggle.TextSize = 17.000
+Toggle.TextWrapped = true
+
+Background.Name = "Background"
+Background.Parent = Toggle
+Background.BackgroundColor3 = Color3.fromRGB(32, 58, 85)
+Background.Position = UDim2.new(0.847826183, 0, 0.100000001, 0)
+Background.Size = UDim2.new(0, 50, 0, 23)
+Background.Font = Enum.Font.SourceSans
+Background.Text = ""
+Background.TextColor3 = Color3.fromRGB(0, 0, 0)
+Background.TextSize = 14.000
+
+UICorner_7.CornerRadius = UDim.new(1, 0)
+UICorner_7.Parent = Background
+
+ToggleBall.Name = "ToggleBall"
+ToggleBall.Parent = Background
+ToggleBall.BackgroundColor3 = Color3.fromRGB(47, 167, 197)
+ToggleBall.Position = UDim2.new(0, 0, -0.0430000015, 0)
+ToggleBall.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_8.CornerRadius = UDim.new(1, 0)
+UICorner_8.Parent = ToggleBall
+
+UICorner_9.Parent = PlayerTab
+
+InfJ.Name = "InfJ"
+InfJ.Parent = PlayerTab
+InfJ.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+InfJ.BorderSizePixel = 0
+InfJ.Size = UDim2.new(0, 200, 0, 50)
+InfJ.Font = Enum.Font.SourceSansItalic
+InfJ.Text = "Infinite Jump"
+InfJ.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfJ.TextScaled = true
+InfJ.TextSize = 17.000
+InfJ.TextWrapped = true
+
+Background_2.Name = "Background"
+Background_2.Parent = InfJ
+Background_2.BackgroundColor3 = Color3.fromRGB(32, 58, 85)
+Background_2.Position = UDim2.new(0.847826183, 0, 0.100000001, 0)
+Background_2.Size = UDim2.new(0, 50, 0, 23)
+Background_2.Font = Enum.Font.SourceSans
+Background_2.Text = ""
+Background_2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Background_2.TextSize = 14.000
+
+UICorner_10.CornerRadius = UDim.new(1, 0)
+UICorner_10.Parent = Background_2
+
+ToggleBall_2.Name = "ToggleBall"
+ToggleBall_2.Parent = Background_2
+ToggleBall_2.BackgroundColor3 = Color3.fromRGB(47, 167, 197)
+ToggleBall_2.Position = UDim2.new(0, 0, -0.0430000015, 0)
+ToggleBall_2.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = ToggleBall_2
+
+Noclipx.Name = "Noclip (x)"
+Noclipx.Parent = PlayerTab
+Noclipx.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+Noclipx.BorderSizePixel = 0
+Noclipx.Size = UDim2.new(0, 200, 0, 50)
+Noclipx.Font = Enum.Font.SourceSansItalic
+Noclipx.Text = "Noclip (x)"
+Noclipx.TextColor3 = Color3.fromRGB(255, 255, 255)
+Noclipx.TextScaled = true
+Noclipx.TextSize = 17.000
+Noclipx.TextWrapped = true
+
+Background_3.Name = "Background"
+Background_3.Parent = Noclipx
+Background_3.BackgroundColor3 = Color3.fromRGB(32, 58, 85)
+Background_3.Position = UDim2.new(0.847826183, 0, 0.100000001, 0)
+Background_3.Size = UDim2.new(0, 50, 0, 23)
+Background_3.Font = Enum.Font.SourceSans
+Background_3.Text = ""
+Background_3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Background_3.TextSize = 14.000
+
+UICorner_12.CornerRadius = UDim.new(1, 0)
+UICorner_12.Parent = Background_3
+
+ToggleBall_3.Name = "ToggleBall"
+ToggleBall_3.Parent = Background_3
+ToggleBall_3.BackgroundColor3 = Color3.fromRGB(47, 167, 197)
+ToggleBall_3.Position = UDim2.new(0, 0, -0.0430000015, 0)
+ToggleBall_3.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_13.CornerRadius = UDim.new(1, 0)
+UICorner_13.Parent = ToggleBall_3
+
+UICorner_14.Parent = Tabs
+
+MiscTab.Name = "MiscTab"
+MiscTab.Parent = Tabs
+MiscTab.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+MiscTab.BorderSizePixel = 0
+MiscTab.Position = UDim2.new(-0.000794634223, 0, -0.000962361693, 0)
+MiscTab.Size = UDim2.new(0, 506, 0, 280)
+MiscTab.Visible = false
+
+UIGridLayout_2.Parent = MiscTab
+UIGridLayout_2.SortOrder = Enum.SortOrder.LayoutOrder
+UIGridLayout_2.CellSize = UDim2.new(1, 0, 0, 30)
+
+UICorner_15.Parent = MiscTab
+
+ChestESP.Name = "ChestESP"
+ChestESP.Parent = MiscTab
+ChestESP.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+ChestESP.BorderSizePixel = 0
+ChestESP.Size = UDim2.new(0, 200, 0, 50)
+ChestESP.Font = Enum.Font.Unknown
+ChestESP.Text = "Chest ESP!"
+ChestESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChestESP.TextScaled = true
+ChestESP.TextSize = 17.000
+ChestESP.TextWrapped = true
+
+Background_4.Name = "Background"
+Background_4.Parent = ChestESP
+Background_4.BackgroundColor3 = Color3.fromRGB(32, 58, 85)
+Background_4.Position = UDim2.new(0.847826183, 0, 0.100000001, 0)
+Background_4.Size = UDim2.new(0, 50, 0, 23)
+Background_4.Font = Enum.Font.SourceSans
+Background_4.Text = ""
+Background_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Background_4.TextSize = 14.000
+
+UICorner_16.CornerRadius = UDim.new(1, 0)
+UICorner_16.Parent = Background_4
+
+ToggleBall_4.Name = "ToggleBall"
+ToggleBall_4.Parent = Background_4
+ToggleBall_4.BackgroundColor3 = Color3.fromRGB(47, 167, 197)
+ToggleBall_4.Position = UDim2.new(0, 0, -0.0430000015, 0)
+ToggleBall_4.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_17.CornerRadius = UDim.new(1, 0)
+UICorner_17.Parent = ToggleBall_4
+
+PlayerESP.Name = "PlayerESP"
+PlayerESP.Parent = MiscTab
+PlayerESP.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+PlayerESP.BorderSizePixel = 0
+PlayerESP.Size = UDim2.new(0, 200, 0, 50)
+PlayerESP.Font = Enum.Font.Unknown
+PlayerESP.Text = "Player ESP"
+PlayerESP.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerESP.TextScaled = true
+PlayerESP.TextSize = 17.000
+PlayerESP.TextWrapped = true
+
+Background_5.Name = "Background"
+Background_5.Parent = PlayerESP
+Background_5.BackgroundColor3 = Color3.fromRGB(32, 58, 85)
+Background_5.Position = UDim2.new(0.847826183, 0, 0.100000001, 0)
+Background_5.Size = UDim2.new(0, 50, 0, 23)
+Background_5.Font = Enum.Font.SourceSans
+Background_5.Text = ""
+Background_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Background_5.TextSize = 14.000
+
+UICorner_18.CornerRadius = UDim.new(1, 0)
+UICorner_18.Parent = Background_5
+
+ToggleBall_5.Name = "ToggleBall"
+ToggleBall_5.Parent = Background_5
+ToggleBall_5.BackgroundColor3 = Color3.fromRGB(47, 167, 197)
+ToggleBall_5.Position = UDim2.new(0, 0, -0.0430000015, 0)
+ToggleBall_5.Size = UDim2.new(0, 25, 0, 25)
+
+UICorner_19.CornerRadius = UDim.new(1, 0)
+UICorner_19.Parent = ToggleBall_5
+
+WelcomeTab.Name = "WelcomeTab"
+WelcomeTab.Parent = Tabs
+WelcomeTab.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+WelcomeTab.BorderSizePixel = 0
+WelcomeTab.Position = UDim2.new(-0.000794634223, 0, -0.000962361693, 0)
+WelcomeTab.Size = UDim2.new(0, 506, 0, 280)
+WelcomeTab.Visible = false
+
+UICorner_20.Parent = WelcomeTab
+
+TextLabel.Parent = WelcomeTab
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0.193675891, 0, 0.5, 0)
+TextLabel.Size = UDim2.new(0, 265, 0, 50)
+TextLabel.Font = Enum.Font.FredokaOne
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 14.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = WelcomeTab
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.Position = UDim2.new(0.25691697, 0, 0.721428573, 0)
+TextLabel_2.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_2.Font = Enum.Font.Unknown
+TextLabel_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.TextScaled = true
+TextLabel_2.TextSize = 14.000
+TextLabel_2.TextWrapped = true
+
+ImageLabel.Parent = WelcomeTab
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.3577075, 0, 0.100000001, 0)
+ImageLabel.Size = UDim2.new(0, 100, 0, 100)
+ImageLabel.Image = "rbxasset://textures/ui/GuiImagePlaceholder.png"
+
+UICorner_21.Parent = Ui
+
+random.Name = "random"
+random.Parent = Ui
+random.BackgroundColor3 = Color3.fromRGB(47, 47, 47)
+random.BorderSizePixel = 0
+random.Position = UDim2.new(0.2126441, 0, 0.159751922, 0)
+random.Size = UDim2.new(0, 506, 0, 280)
+
+UICorner_22.Parent = random
+
+-- Scripts:
+
+local function CMWPAH_fake_script() -- Welcome.LocalScript 
+	local script = Instance.new('LocalScript', Welcome)
+
+	local welcometab =  script.Parent.Parent.Parent.Tabs.WelcomeTab
+	local playertab =  script.Parent.Parent.Parent.Tabs.PlayerTab
+	local misctab =  script.Parent.Parent.Parent.Tabs.MiscTab
+	local rnd =  script.Parent.Parent.Parent.random
+	
+	
+	
+	local welcomebutton = script.Parent
+	welcomebutton.MouseButton1Click:Connect(function()
+		rnd.Visible = false
+		misctab.Visible = false
+		playertab.Visible = false
+		welcometab.Visible = true
+	end)
+end
+coroutine.wrap(CMWPAH_fake_script)()
+local function CCJR_fake_script() -- Player.LocalScript 
+	local script = Instance.new('LocalScript', Player)
+
+	local  playertab = script.Parent.Parent.Parent.Tabs.PlayerTab
+	local misctab = script.Parent.Parent.Parent.Tabs.MiscTab
+	local welcometab =  script.Parent.Parent.Parent.Tabs.WelcomeTab
+	local rnd =  script.Parent.Parent.Parent.random
+	local tab = script.Parent
+	tab.MouseButton1Click:Connect(function()
+		rnd.Visible = false
+		welcometab.Visible = false
+		misctab.Visible = false
+		playertab.Visible = true
+	end)
+end
+coroutine.wrap(CCJR_fake_script)()
+local function TUJGY_fake_script() -- Misc.LocalScript 
+	local script = Instance.new('LocalScript', Misc)
+
+	local misc = script.Parent.Parent.Parent.Tabs.MiscTab
+	local WelcomeTab = script.Parent.Parent.Parent.Tabs.WelcomeTab
+	local PlayerTab = script.Parent.Parent.Parent.Tabs.PlayerTab
+	local rnd = script.Parent.Parent.Parent.random
+	local btn = script.Parent
+	btn.MouseButton1Click:Connect(function()
+		PlayerTab.Visible = false
+		WelcomeTab.Visible = false
+		rnd.Visible = false
+		misc.Visible = true
+	end)
+end
+coroutine.wrap(TUJGY_fake_script)()
+local function VBLVBY_fake_script() -- Ui.TogleUi 
+	local script = Instance.new('LocalScript', Ui)
+
+	local UserInputService = game:GetService("UserInputService")
+	
+	UserInputService.InputBegan:Connect(function(input)
+		if input.KeyCode == Enum.KeyCode.RightControl then
+			script.Parent.Visible = not script.Parent.Visible
+		end
+	end)
+end
+coroutine.wrap(VBLVBY_fake_script)()
+local function YBHPS_fake_script() -- Toggle.pos 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local debounce = true
+	local m = script.Parent
+	local oldpos = m.Position
+	m.MouseButton1Click:Connect(function()
+		if debounce then
+		local toggl = m.Background.ToggleBall
+		toggl.Position = toggl.Position + UDim2.new(0, 30, 0)
+			debounce = false
+			
+		end
+		end)
+end
+coroutine.wrap(YBHPS_fake_script)()
+local function UWMHMEG_fake_script() -- Toggle.LocalScript 
+	local script = Instance.new('LocalScript', Toggle)
+
+	local e = script.Parent
+	
+	e.MouseButton1Click:Connect(function()
+		
+	local Player = game:GetService'Players'.LocalPlayer;
+	local UIS = game:GetService'UserInputService';
+	UIS.InputBegan:connect(function(UserInput)
+		if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+			_G.Running = true
+			while wait(0.005) and _G.Running == true do
+				game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame + game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame.lookVector * 1.25
+			end
+		end
+		end)
+	
+	UIS.InputEnded:connect(function(UserInput)
+		if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.LeftShift then
+				_G.Running = false
+				
+		end
+	end)
+		
+		end)
+end
+coroutine.wrap(UWMHMEG_fake_script)()
+local function AKVKE_fake_script() -- InfJ.InfJ 
+	local script = Instance.new('LocalScript', InfJ)
+
+	local inf = script.Parent
+	inf.MouseButton1Click:Connect(function()
+		local Player = game:GetService'Players'.LocalPlayer;
+		local UIS = game:GetService'UserInputService';
+	
+		_G.JumpHeight = 100;
+	
+		function Action(Object, Function) if Object ~= nil then Function(Object); end end
+	
+		UIS.InputBegan:connect(function(UserInput)
+			if UserInput.UserInputType == Enum.UserInputType.Keyboard and UserInput.KeyCode == Enum.KeyCode.Space then
+				Action(Player.Character.Humanoid, function(self)
+					if self:GetState() == Enum.HumanoidStateType.Jumping or self:GetState() == Enum.HumanoidStateType.Freefall then
+						Action(self.Parent.HumanoidRootPart, function(self)
+							self.Velocity = Vector3.new(0, _G.JumpHeight, 0);
+						end)
+					end
+				end)
+			end
+		end)
+	
+	
+	end)
+end
+coroutine.wrap(AKVKE_fake_script)()
+local function NMYE_fake_script() -- InfJ.InfJPos 
+	local script = Instance.new('LocalScript', InfJ)
+
+	local debounce = true
+	local m = script.Parent
+	local oldpos = m.Position
+	m.MouseButton1Click:Connect(function()
+		if debounce then
+			local toggl = m.Background.ToggleBall
+			toggl.Position = toggl.Position + UDim2.new(0, 30, 0)
+			debounce = false
+	
+		end
+	end)
+end
+coroutine.wrap(NMYE_fake_script)()
+local function MZOB_fake_script() -- Noclipx.Noclip 
+	local script = Instance.new('LocalScript', Noclipx)
+
+	local StealthMode = true -- If game has an anticheat that checks the logs
+	
+	local Indicator
+	
+	if not StealthMode then
+		local ScreenGui = Instance.new("ScreenGui", game.CoreGui)
+		print("NOCLIP: Press X to Activate")
+		Indicator = Instance.new("TextLabel", ScreenGui)
+		Indicator.AnchorPoint = Vector2.new(0, 1)
+		Indicator.Position = UDim2.new(0, 0, 1, 0)
+		Indicator.Size = UDim2.new(0, 200, 0, 50)
+		Indicator.BackgroundTransparency = 1
+		Indicator.TextScaled = true
+		Indicator.TextStrokeTransparency = 0
+		Indicator.TextColor3 = Color3.new(0, 0, 0)
+		Indicator.TextStrokeColor3 = Color3.new(1, 1, 1)
+		Indicator.Text = "Noclip: Enabled"
+	end
+	
+	local noclip = false
+	local player = game.Players.LocalPlayer
+	local character = player.Character or player.CharacterAdded:Wait()
+	
+	local mouse = player:GetMouse()
+	
+	mouse.KeyDown:Connect(function(key)
+		if key == "x" then
+			noclip = not noclip
+	
+			if not StealthMode then
+				Indicator.Text = "Noclip: " .. (noclip and "Enabled" or "Disabled")
+			end
+		end
+	end)
+	
+	while true do
+		player = game.Players.LocalPlayer
+		character = player.Character
+	
+		if noclip then
+			for _, v in pairs(character:GetDescendants()) do
+				pcall(function()
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end)
+			end
+		end
+	
+		game:GetService("RunService").Stepped:wait()	
+	
+	end
+end
+coroutine.wrap(MZOB_fake_script)()
+local function GVJJ_fake_script() -- Noclipx.NoclipPos 
+	local script = Instance.new('LocalScript', Noclipx)
+
+	local debounce = true
+	local m = script.Parent
+	local oldpos = m.Position
+	m.MouseButton1Click:Connect(function()
+		if debounce then
+			local toggl = m.Background.ToggleBall
+			toggl.Position = toggl.Position + UDim2.new(0, 30, 0)
+			debounce = false
+	
+		end
+	end)
+end
+coroutine.wrap(GVJJ_fake_script)()
+local function KLFA_fake_script() -- ChestESP.chestpos 
+	local script = Instance.new('LocalScript', ChestESP)
+
+	local debounce = true
+	local m = script.Parent
+	local oldpos = m.Position
+	m.MouseButton1Click:Connect(function()
+		if debounce then
+			local toggl = m.Background.ToggleBall
+			toggl.Position = toggl.Position + UDim2.new(0, 30, 0)
+			debounce = false
+		end
+	end)
+end
+coroutine.wrap(KLFA_fake_script)()
+local function NYINSXM_fake_script() -- ChestESP.CHESTESP 
+	local script = Instance.new('LocalScript', ChestESP)
+
+	local btn = script.Parent
+	btn.MouseButton1Click:Connect(function()
+	
+	local EspFolder2 = Instance.new("Folder",game.CoreGui)
+	EspFolder2.Name = "ChestEspFolder"
+	modelsWithEsp = {} 
+	while wait() do
+		wait()
+		for i,v in pairs(game:GetService("Workspace").Effects:GetChildren()) do
+			if v.ClassName == "Model" and not modelsWithEsp[v] then 
+				local Chest = v:FindFirstChildOfClass("MeshPart")
+				if Chest and Chest.MeshId == "rbxassetid://10798559852" then
+					local esp = Instance.new("BoxHandleAdornment",EspFolder2)
+					esp.Adornee = v
+					esp.ZIndex = 0
+					esp.Size = Vector3.new(4, 5, 1)
+					esp.Transparency = 0.65
+					esp.Color3 = Color3.fromRGB(255,48,48)
+					esp.AlwaysOnTop = true
+					esp.Name = "EspBox"
+					modelsWithEsp[v] = true 
+				end
+			end
+		end
+		end
+		end)
+end
+coroutine.wrap(NYINSXM_fake_script)()
+local function PIQLFVQ_fake_script() -- PlayerESP.PlayerPos 
+	local script = Instance.new('LocalScript', PlayerESP)
+
+	local debounce = true
+	local m = script.Parent
+	local oldpos = m.Position
+	m.MouseButton1Click:Connect(function()
+		if debounce then
+			local toggl = m.Background.ToggleBall
+			toggl.Position = toggl.Position + UDim2.new(0, 30, 0)
+			debounce = false
+		end
+	end)
+end
+coroutine.wrap(PIQLFVQ_fake_script)()
+local function HZDC_fake_script() -- PlayerESP.PlayerESP 
+	local script = Instance.new('LocalScript', PlayerESP)
+
+	local btn = script.Parent
+	btn.MouseButton1Click:Connect(function()
+		local players = game.Players:GetPlayers()
+	
+		for i,v in pairs(players) do
+			local esp = Instance.new("Highlight")
+			esp.Name = v.Name
+			esp.FillTransparency = 50
+			esp.FillColor = Color3.new(1, 0.666667, 0)
+			esp.OutlineColor = Color3.new(1, 0.333333, 1)
+			esp.OutlineTransparency = 0
+			esp.Parent = v.Character
+		end
+		
+	end)
+end
+coroutine.wrap(HZDC_fake_script)()
+local function AFEUUGL_fake_script() -- TextLabel.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel)
+
+	local e = script.Parent
+	e.Text = "Welcome : "..game.Players.LocalPlayer.Name
+end
+coroutine.wrap(AFEUUGL_fake_script)()
+local function IVLKIKG_fake_script() -- TextLabel_2.LocalScript 
+	local script = Instance.new('LocalScript', TextLabel_2)
+
+	
+	local rs = game:GetService("RunService")
+	rs.RenderStepped:Connect(function()
+		local frames = workspace:GetRealPhysicsFPS()	
+		script.Parent.Text = "FPS : "..math.floor(frames)
+		
+	end)
+end
+coroutine.wrap(IVLKIKG_fake_script)()
+local function KQFUIIZ_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
+
+	local plr = game:GetService("Players")
+	local players = plr.LocalPlayer
+	local userid = players.UserId
+	local imglbl = script.Parent
+	imglbl.Image = plr:GetUserThumbnailAsync(userid, Enum.ThumbnailType.HeadShot, Enum.ThumbnailSize.Size420x420)
+end
+coroutine.wrap(KQFUIIZ_fake_script)()
+local function FHAUOZ_fake_script() -- Ui.LocalScript 
+	local script = Instance.new('LocalScript', Ui)
+
+	local e = script.Parent
+	e.Active = true
+	e.Draggable = true
+end
+coroutine.wrap(FHAUOZ_fake_script)()
